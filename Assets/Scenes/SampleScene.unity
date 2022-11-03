@@ -507,6 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
+  _jumpForce: 6
 --- !u!95 &345802474
 Animator:
   serializedVersion: 4
@@ -1505,12 +1506,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -2077035170541837183, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
+      propertyPath: m_Size.x
+      value: 3.618315
+      objectReference: {fileID: 0}
+    - target: {fileID: -2077035170541837183, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_Size.y
-      value: 3.885024
+      value: 3.6196866
+      objectReference: {fileID: 0}
+    - target: {fileID: -2077035170541837183, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.011225104
       objectReference: {fileID: 0}
     - target: {fileID: -2077035170541837183, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_Offset.y
-      value: 0.035044193
+      value: 0.012932301
       objectReference: {fileID: 0}
     - target: {fileID: 2282944050536688918, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_Name

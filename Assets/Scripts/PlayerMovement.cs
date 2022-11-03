@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
+    [SerializeField] private float _jumpForce;
 
     private const string RunAnimation = "IsRun";
     private const string JumpTrigger = "Jump";
@@ -45,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, _speed);
+        _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, _jumpForce);
         _animator.SetTrigger(JumpTrigger);
         _isGround = false;
     }
