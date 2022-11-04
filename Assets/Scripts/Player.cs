@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour 
 {
+    public static int CoinsCount { get; set; } = 0;
+
     private const string DieAnimation = "IsDie";
     private float _health = 1;
     private Animator _animator;
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
     {
         _rigidBody.constraints = RigidbodyConstraints2D.FreezePosition;
         _animator.SetTrigger(DieAnimation);
+        CoinsCount = 0;
         SceneManager.LoadScene(0);
     }
 }
