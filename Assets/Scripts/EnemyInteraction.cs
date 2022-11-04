@@ -1,11 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
-public class PlayerDeath : MonoBehaviour
+public class EnemyInteraction : MonoBehaviour
 {
     private SpriteRenderer _spriteRenderer;
+    private float _damage = 100;
 
     private void Awake()
     {
@@ -16,7 +15,7 @@ public class PlayerDeath : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Player>(out Player _player)) {
             _spriteRenderer.color = Color.red;
-            _player.Die();
+            _player.TakeDamage(_damage);
         }
     }
 }

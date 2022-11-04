@@ -371,7 +371,7 @@ GameObject:
   m_Layer: 0
   m_Name: point1
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -382,14 +382,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360793017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.608, y: -0.126, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0.0000013706759, y: 0.0026179883, z: 0.00052355893, w: 0.9999964}
+  m_LocalPosition: {x: 5.97, y: -0.1, z: 0}
+  m_LocalScale: {x: 6.641228, y: 4.434914, z: 3.766334}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2129563643}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0.3, z: 0.06}
 --- !u!1 &370973509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,10 +1039,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.0001
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_AngularDrag: 0
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1105,7 +1105,7 @@ GameObject:
   m_Layer: 0
   m_Name: point2
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1117,7 +1117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2008488944}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.947, y: -0.134, z: 0}
+  m_LocalPosition: {x: 1.93, y: -0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1461,15 +1461,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6906250154280909823, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.30462003
+      value: 0.30462
+      objectReference: {fileID: 0}
+    - target: {fileID: 6906250154280909823, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 6906250154280909823, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.09
+      value: 6.43
       objectReference: {fileID: 0}
     - target: {fileID: 6906250154280909823, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.391
+      value: -3.36
       objectReference: {fileID: 0}
     - target: {fileID: 6906250154280909823, guid: bd381258e1ee99947b2a9243ced8b276, type: 3}
       propertyPath: m_LocalPosition.z
