@@ -12,7 +12,7 @@ public class CoinSpawner : MonoBehaviour
     private int _delay = 2;
     private WaitForSeconds _wait;
 
-    private void Awake()
+    private void Start()
     {
         _wait = new WaitForSeconds(_delay);
         StartCoroutine(SpawnCoins());
