@@ -12,8 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask _groundMask;
 
     private const string RunAnimation = "IsRun";
-    private const string JumpOnAnimation = "JumpOn";
-    private const string JumpOffAnimation = "JumpOff";
+    private const string IsJumpAnimation = "IsJump";
 
     private Rigidbody2D _rigidBody;
     private SpriteRenderer _spriteRenderer;
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        _animator.SetTrigger(JumpOnAnimation);
+        _animator.SetBool(IsJumpAnimation, true);
         _rigidBody.velocity = new Vector2(_rigidBody.velocity.x, _jumpForce);
     }
 
@@ -56,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Ground>(out Ground ground))
         {
-           _animator.SetTrigger(JumpOffAnimation);
+            _animator.SetBool(IsJumpAnimation, false);
         }
     }
 }
