@@ -876,11 +876,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8442a4feb299bc4b979f4db530746b6, type: 3}
+  m_Script: {fileID: 11500000, guid: d23af43896c19124e8be018ec083c084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 1942950107}
-  _player: {fileID: 3039242445168429172}
 --- !u!1 &793528826
 GameObject:
   m_ObjectHideFlags: 0
@@ -1931,6 +1930,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0ba2a715fe0c241b9117a51e0af657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _coinsAdd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &8108783972582398485
 PrefabInstance:
   m_ObjectHideFlags: 0

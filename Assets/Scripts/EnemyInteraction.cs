@@ -13,7 +13,7 @@ public class EnemyInteraction : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent<Player>(out Player _player)) {
+        if (collision.gameObject.TryGetComponent(out Player _player)) {
             _spriteRenderer.color = Color.red;
             _player.TakeDamage(_damage);
         }
