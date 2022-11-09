@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour 
 {
-    public static int CoinsCount { get; set; } = 0;
+    public int CoinsCount { get; set; } = 0;
 
     private const string DieAnimation = "IsDie";
     private float _health = 1;

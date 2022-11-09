@@ -7,7 +7,6 @@ public class CoinSpawner : MonoBehaviour
 {
     [SerializeField] private Transform _pointsManager;
     [SerializeField] private Coin _coin;
-    [SerializeField] private Text _text;
 
     private int _delay = 2;
     private WaitForSeconds _wait;
@@ -16,11 +15,6 @@ public class CoinSpawner : MonoBehaviour
     {
         _wait = new WaitForSeconds(_delay);
         StartCoroutine(SpawnCoins());
-    }
-
-    private void Update()
-    {
-        _text.text = $"Score: {Player.CoinsCount}";
     }
 
     private IEnumerator SpawnCoins()
